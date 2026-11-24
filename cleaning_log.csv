@@ -1,0 +1,11 @@
+Check,Rows or users,Removed rows,Handling
+Activity rows received,19741,0,Source rows
+Exact duplicate activity rows,78,78,Removed exact duplicate records
+Rows after exact deduplication,19663,0,Intermediate row count
+Orphan activity rows,20,20,Removed rows without enrolled user
+Rows after orphan removal,19643,0,Intermediate row count
+"Impossible podcast minutes (>1,440)",12,12,Removed impossible values
+Clean activity rows,19631,0,Final joined analysis events
+Null podcast minute values in clean events,157,0,Kept null; ignored by sum
+Users with no clean activity rows,0,0,Retained as zero in user-level table
+Users with missing account age,30,0,Kept null; excluded only from age balance test

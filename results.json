@@ -1,0 +1,233 @@
+{
+  "row_counts": {
+    "users": 2000,
+    "activity_raw": 19741,
+    "exact_duplicates": 78,
+    "orphans": 20,
+    "impossible": 12,
+    "clean_events": 19631,
+    "null_podcast_minutes": 157,
+    "users_no_activity": 0
+  },
+  "randomization": {
+    "variant_counts": {
+      "Control": 1015,
+      "Treatment": 985
+    },
+    "srm_chi_square": 0.45,
+    "srm_p": 0.502334954360502,
+    "region_p": 0.025676810052820173,
+    "premium_p": 0.9467727087522845,
+    "account_age_p": 0.13798190402273205,
+    "account_age_control_mean": 845.3149448345035,
+    "account_age_treatment_mean": 807.3884892086331
+  },
+  "primary": {
+    "control_mean": 10.348311048557353,
+    "treatment_mean": 11.423778100072518,
+    "difference": 1.0754670515151652,
+    "relative_lift": 0.10392681921414558,
+    "ci_low": 0.21002777081139812,
+    "ci_high": 1.9409063322189324,
+    "t_stat": 2.4371550931097916,
+    "p_value": 0.014893819488781216,
+    "df": 1915.0519965269864,
+    "mann_whitney_p": 0.057802621991277676,
+    "bootstrap_ci_low": 0.20526956243726044,
+    "bootstrap_ci_high": 1.9722212765729434
+  },
+  "secondary": {
+    "avg_daily_clicks": {
+      "control_mean": 0.688106966924701,
+      "treatment_mean": 0.9860043509789703,
+      "difference": 0.29789738405426935,
+      "relative_lift": 0.4329230750062556,
+      "ci_low": 0.23669211666753373,
+      "ci_high": 0.359102651441005,
+      "t_stat": 9.546058376340381,
+      "p_value": 4.310483580990283e-21,
+      "df": 1763.9059454582068,
+      "metric": "Feed clicks per user-day",
+      "bonferroni_alpha": 0.01,
+      "bonferroni_significant": true
+    },
+    "podcast_listener": {
+      "control_mean": 0.9970443349753695,
+      "treatment_mean": 0.9959390862944163,
+      "difference": -0.0011052486809531858,
+      "relative_lift": -0.0011085251098492922,
+      "ci_low": -0.006300163648053173,
+      "ci_high": 0.004089666286146801,
+      "t_stat": -0.4172554223468323,
+      "p_value": 0.6765379805826854,
+      "df": 1930.7537231453064,
+      "metric": "Podcast listener rate",
+      "bonferroni_alpha": 0.01,
+      "bonferroni_significant": false
+    },
+    "podcast_days": {
+      "control_mean": 6.722167487684729,
+      "treatment_mean": 6.993908629441624,
+      "difference": 0.27174114175689557,
+      "relative_lift": 0.040424631230140555,
+      "ci_low": 0.06797698716038417,
+      "ci_high": 0.475505296353407,
+      "t_stat": 2.615413268739409,
+      "p_value": 0.00897938876994732,
+      "df": 1987.01428202444,
+      "metric": "Podcast listening days per user",
+      "bonferroni_alpha": 0.01,
+      "bonferroni_significant": true
+    },
+    "podcast_listening_share": {
+      "control_mean": 0.20627187061339144,
+      "treatment_mean": 0.21637503940506758,
+      "difference": 0.010103168791676137,
+      "relative_lift": 0.04897986701546995,
+      "ci_low": -0.001193052350595105,
+      "ci_high": 0.02139938993394738,
+      "t_stat": 1.7540326630667156,
+      "p_value": 0.07957937432525578,
+      "df": 1982.971655196286,
+      "metric": "Podcast share of listening",
+      "bonferroni_alpha": 0.01,
+      "bonferroni_significant": false
+    },
+    "active_day_rate": {
+      "control_mean": 0.6950035186488389,
+      "treatment_mean": 0.707396664249456,
+      "difference": 0.012393145600617106,
+      "relative_lift": 0.017831773894772078,
+      "ci_low": -0.0038164504930312156,
+      "ci_high": 0.028602741694265427,
+      "t_stat": 1.4994144447727704,
+      "p_value": 0.13392477605717618,
+      "df": 1989.8874185046889,
+      "metric": "Active-day rate",
+      "bonferroni_alpha": 0.01,
+      "bonferroni_significant": false
+    }
+  },
+  "guardrails": {
+    "avg_daily_crashes": {
+      "control_mean": 0.016115411681914146,
+      "treatment_mean": 0.019144307469180562,
+      "difference": 0.0030288957872664155,
+      "relative_lift": 0.18795025824041817,
+      "ci_low": -0.00017195623427837753,
+      "ci_high": 0.006229747808811208,
+      "t_stat": 1.8558034879349548,
+      "p_value": 0.031814921252214516,
+      "df": 1982.9813246329584,
+      "metric": "App crashes per user-day",
+      "harm_direction_p": 0.031814921252214516,
+      "threshold_relative_change": 0.1,
+      "relative_change": 0.18795025824041817,
+      "threshold_exceeded": true,
+      "statistically_significant_harm": true
+    },
+    "avg_daily_music_min": {
+      "control_mean": 38.54251231527094,
+      "treatment_mean": 38.473313995649015,
+      "difference": -0.06919831962192546,
+      "relative_lift": -0.001795376467831039,
+      "ci_low": -1.488687244200839,
+      "ci_high": 1.350290604956988,
+      "t_stat": -0.09560373107607291,
+      "p_value": 0.4619224453650298,
+      "df": 1997.6730948777426,
+      "metric": "Music minutes per user-day",
+      "harm_direction_p": 0.4619224453650298,
+      "threshold_relative_change": -0.03,
+      "relative_change": -0.001795376467831039,
+      "threshold_exceeded": false,
+      "statistically_significant_harm": false
+    },
+    "active_day_rate": {
+      "control_mean": 0.6950035186488389,
+      "treatment_mean": 0.707396664249456,
+      "difference": 0.012393145600617106,
+      "relative_lift": 0.017831773894772078,
+      "ci_low": -0.0038164504930312156,
+      "ci_high": 0.028602741694265427,
+      "t_stat": 1.4994144447727704,
+      "p_value": 0.9330376119714119,
+      "df": 1989.8874185046889,
+      "metric": "Active-day rate",
+      "harm_direction_p": 0.9330376119714119,
+      "threshold_relative_change": null,
+      "relative_change": 0.017831773894772078,
+      "threshold_exceeded": false,
+      "statistically_significant_harm": false
+    }
+  },
+  "segments": {
+    "Premium_Status": {
+      "Free": {
+        "control_mean": 10.281390306122448,
+        "treatment_mean": 11.126564562978611,
+        "difference": 0.8451742568561631,
+        "p_value": 0.14351199193411918,
+        "n_control": 560,
+        "n_treatment": 541
+      },
+      "Premium": {
+        "control_mean": 10.43067503924647,
+        "treatment_mean": 11.785923423423425,
+        "difference": 1.3552483841769547,
+        "p_value": 0.04695352254139784,
+        "n_control": 455,
+        "n_treatment": 444
+      }
+    },
+    "Region": {
+      "APAC": {
+        "control_mean": 10.704562211981568,
+        "treatment_mean": 11.278987150415723,
+        "difference": 0.5744249384341558,
+        "p_value": 0.5769288551237427,
+        "n_control": 155,
+        "n_treatment": 189
+      },
+      "Europe": {
+        "control_mean": 10.382084690553745,
+        "treatment_mean": 11.714825724104076,
+        "difference": 1.332741033550331,
+        "p_value": 0.1073215061671662,
+        "n_control": 307,
+        "n_treatment": 291
+      },
+      "LATAM": {
+        "control_mean": 9.658835672997522,
+        "treatment_mean": 12.050494505494505,
+        "difference": 2.391658832496983,
+        "p_value": 0.034665574220981425,
+        "n_control": 173,
+        "n_treatment": 130
+      },
+      "MEA": {
+        "control_mean": 10.595194805194804,
+        "treatment_mean": 9.72313432835821,
+        "difference": -0.8720604768365945,
+        "p_value": 0.5984970428661834,
+        "n_control": 55,
+        "n_treatment": 67
+      },
+      "North America": {
+        "control_mean": 10.471736263736263,
+        "treatment_mean": 11.34306586270872,
+        "difference": 0.8713295989724568,
+        "p_value": 0.2797163340189519,
+        "n_control": 325,
+        "n_treatment": 308
+      }
+    }
+  },
+  "power": {
+    "mde_standardized_d": 0.1253649132481731,
+    "pooled_sd_minutes": 9.853014617773114,
+    "mde_minutes_per_day": 1.2352223227901078,
+    "mde_relative_to_control": 0.1193646303241251
+  },
+  "sql_python_max_abs_difference": 1.4210854715202004e-14
+}
